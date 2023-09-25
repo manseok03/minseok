@@ -1,6 +1,8 @@
 import math
 import random
 from datetime import datetime as dt
+import os
+
 
 def ut_sqrt(x) :
     return math.sqrt(x)
@@ -39,6 +41,29 @@ def cvt_time2str(objtime) :
 def cvt_str2time() :
     obj = dt.now()
     return obj.strftime("%Y-%m-%d")
+
+
+def get_curdir() :
+    return os.getcwd()
+
+def os_mkdir(pname) :
+    return os.getcwd()
+
+print(os.getcwd())
+
+os.chdir('../')
+
+print(os.getcwd())
+
+print(os.listdir())
+
+os.rmdir('new_directory')
+print(os.listdir())
+
+os.mkdir('new_directory')
+print(os.listdir())
+
+
 
 from datetime import datetime as dt
 

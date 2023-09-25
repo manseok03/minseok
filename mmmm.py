@@ -212,6 +212,36 @@ print(os.listdir())
 os.rmdir(pname)
 print(os.listdir())"""
 
-import sys
+"""import sys
 print(sys.version)
-print(sys.argv)
+print(sys.argv)"""
+
+"""st = []
+
+st.append(1)
+st.append(2)
+st.append(3)
+st.append(4)
+st.append(5)
+
+print(st)
+
+top = st.pop()
+print(top)
+print(st)
+print(len(st))"""
+
+queue = []
+
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.append(4)
+queue.append(5)
+
+print(queue)
+
+front = queue.pop(0)
+print(front) # 1
+print(queue) # [2, 3]
+print(len(queue))
