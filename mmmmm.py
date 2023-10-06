@@ -124,7 +124,7 @@ lrr = [1, 9, 2, 7, 5]
 print(bubble_sort(lrr))"""
 
 # 퀵소트
-def quick_sort(arr):
+"""def quick_sort(arr):
     if len(arr) <= 1:
         return arr
     
@@ -144,4 +144,67 @@ print(len(my_list))
 
 sorted_list = quick_sort(my_list)
 
-print(sorted_list)
+print(sorted_list)"""
+
+# 서드파티 모듈
+# (1) requests
+"""import requests
+
+res = requests.get("https://www.google.com")
+print(res)
+print(res.content)"""
+
+# (2) numpy
+"""import numpy as np
+
+# 1치배열 생성
+a = np.array([1, 2, 3])
+print(a)
+
+# 2차, 3행 배열, 0으로 초기화
+b = np.zeros((2, 3))
+print(b)
+
+# 2차 3행 배열, 1로 초기화
+c = np.ones((2, 3))
+print(c)
+
+d = np.array([1, 2, 3])
+e = np.array([4, 5, 6])"""
+
+# (3) pandas
+"""import pandas as pd
+
+data = {'Name': ['John', 'Jane', 'Mike', 'Sarah'],
+        'Age': [25, 30, 35, 40],
+        'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
+
+df = pd.DataFrame(data)
+#print(df)
+
+# age 관련 속성
+#print(df['Age'].describe())
+
+# Sort the dataframe by age in descending order
+#print(df.sort_values(by='Age', ascending=False))
+
+# print(df.sort_values(by='Age', ascending=True))
+print(df.sort_values(by='Name', ascending=True))"""
+
+# (4) matplotlib
+import matplotlib.pyplot as plt
+
+# create example data
+x = [1, 2, 3, 4, 5, 6]
+y = [10, 8, 6, 4, 2, 1]
+
+# Plot the data
+plt.plot(x, y)
+
+# Add labels and title
+plt.xlabel('time')
+plt.ylabel('n ')
+plt.title('python')
+
+# Show the plot
+plt.show()
