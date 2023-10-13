@@ -142,7 +142,7 @@ print(ep)
 pi = mu.mt_pi()
 print(pi)"""
 
-"""import random as rd
+import random as rd
 
 res = rd.randint(1, 100)
 print(res)
@@ -155,4 +155,4 @@ fres = rd.random()
 print(fres)
 
 nvres = rd.normalvariate()
-print(nvres)"""
+print(nvres)

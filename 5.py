@@ -102,7 +102,7 @@ print(len(st))"""
 
 # 큐 생성, 값 넣기, 상태 확인, 값 빼기
 
-"""queue = []
+queue = []
 
 queue.append(1)
 queue.append(2)
@@ -115,4 +115,4 @@ print(queue)
 front = queue.pop(0)
 print(front) # 1
 print(queue) # [2, 3]
-print(len(queue))"""
+print(len(queue))
