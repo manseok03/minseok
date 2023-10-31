@@ -25,7 +25,7 @@ print(obj.count)
 print(MyClass.count)
 print(MyClass.count)"""
 
-#
+# 클래스 정의 예시
 """
 class champion:
     lv = 1
@@ -61,7 +61,7 @@ class champion:
         self.movSpd = (20 + self.speed)*(1.00)*(100)
         
     def printstatus(self):
-        print("chmpNam:%s, hp:%f, lv%d, mvSpd:%f, atkSpd:%f" % ( self.chmpNam, self ))
+        print("chmpNam:%s, hp:%f, lv%d, mvSpd:%f, atkSpd:%f" % ( self.chmpNam, self.hp, self.lv, self.movSpd, self.atkSpd ))
         
 ashe = champion("ashe", 474.0)
 mipo = champion("mipo", 520.0)
@@ -298,3 +298,35 @@ print(getPersonName(user2))"""
 
 # 캡슐화
 
+class Person :
+    def __init__(self, name, age, num) :
+        self.name = name
+        self.age = age
+        self.number = num
+        
+    def getName(self) :
+        return self.name
+    
+    def setName(self, newName) :
+        self.name = newName
+        return
+    
+    def getNumber(self) :
+        return self.number
+    
+    def setNumber(self, newNum) :
+        self.number = newNum
+        return
+    
+p1 = Person("python", 23, "010123456780")
+p2 = Person("hello", 21, "01056781234")
+
+print(p1.getName())
+print(p1.getNumber())
+print(p2.getNumber())
+
+p1.setNumber("01011111111")
+p2.setNumber("01022222222")
+
+print(p1.getNumber())
+print(p2.getNumber())
