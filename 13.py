@@ -121,7 +121,7 @@ dmp.diff_cleanupSemantic(diff)
 
 for d in diff:
     print(d)"""
-    
+
 # 테스트용 데이터 생성 
 """
 from faker import Faker as fk
@@ -281,7 +281,7 @@ goods = res_html.select_one("#content_table > div.table_group > div:nth-child(3)
 print(goods.get_text())"""
 
 # selct
-
+"""
 from bs4 import BeautifulSoup as bs
 import requests as rq
 
@@ -304,4 +304,4 @@ print("\n-------------------\n")
 ct = res_html.selct("a.warp_thumb")
 for j in ct :
     c = j.attrs["data-tiara-custom"]
-    print(c + "\n")
+    print(c + "\n")"""
