@@ -326,19 +326,12 @@ print(df.color.value_counts())
 temp = df.postcode.sum() / df.name.count()
 print(temp)
 """
-# 5-석석8. 비교 연산 
+# 5-18. 비교 연산 
 """
 print(df.name == "이민석")
 """
 # 5-19. 결측 확인
-
+"""
 temp = df[df.color == "Beige"].head(1)
 print(temp)
-
-# 5-20. 비트연산 - Nor
-
-# 5-21. and 연산
-
-# 5-22. or 연산
-
-# 5-23. 정렬
+"""
