@@ -14,8 +14,8 @@ print("\n--------------------\n")
 
 print(df[1][1])
 print("\n--------------------\n")
-print(df[2][2])"""
-
+print(df[2][2])
+"""
 # 1-2. dictionary
 """
 import pandas as pd
@@ -226,14 +226,14 @@ with open(folder + "fktemp.csv", "w", newline='', encoding='utf8') as f :
             temp.color_name() + "\n")"""
         
 # 5-2. 파일 열기
-
+"""
 import pandas as pd
 
 folder = "data/"
 target = folder + "fktemp.csv"
 
 df = pd.read_csv(target)
-
+"""
 # 5-3. csv 파일 열기
 
 # print(df)
