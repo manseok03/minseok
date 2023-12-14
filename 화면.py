@@ -43,15 +43,11 @@ canvas_img = canvas.create_image(300, 280, image=img_main)
 
 # 버튼 및 이벤트 설정
 def rand_choice():
-    # Reset the GUI
+    # GUI 재설정
     recommendation_label.config(text="")
     like_button.config(state=DISABLED)
     dislike_button.config(state=DISABLED)
     recommend_button.config(state=NORMAL)
-
-    # Enable this line if you have multiple images and want to change the canvas image randomly
-    # r_img = random.choice(img_main)
-    # canvas.itemconfig(canvas_img, image=r_img)
 
     show_recommendation()
 
@@ -74,28 +70,28 @@ recommendation_label.pack(pady=20)
 
 def like_action():
     selected_menu_text = recommendation_label.cget("text").strip()
-    # Extract the menu name from the selected_menu_text
+    # selected_menu_text에서 메뉴 이름 추출
     selected_menu_start = selected_menu_text.find('[')
     selected_menu_end = selected_menu_text.find(']')
     selected_menu = selected_menu_text[selected_menu_start + 1:selected_menu_end].strip()
 
-    # Check if the selected menu is in the restaurants dictionary
+    # 선택한 메뉴가 레스토랑 사전에 있는지 확인
     if selected_menu in restaurants:
-        # Get the corresponding website
+        # 해당 웹 사이트 가져오기
         restaurant_info = restaurants[selected_menu]
         restaurant_website = restaurant_info.get('홈페이지')
 
-        # Print debugging information to the console
+        # 디버깅 정보를 콘솔로 프린트
         print("Selected Menu:", selected_menu)
         print("Restaurant Info:", restaurant_info)
         print("Restaurant Website:", restaurant_website)
 
-        # Check if the website is available
+        # 웹사이트를 이용할 수 있는지 확인
         if restaurant_website:
-            # Open the associated website in a new window
+            # 새 창에서 연결된 웹 사이트 열기
             webbrowser.open_new(restaurant_website)
 
-    # Reset the GUI
+    # GUI 재설정
     recommendation_label.config(text="")
     like_button.config(state=DISABLED)
     dislike_button.config(state=DISABLED)
