@@ -1,7 +1,6 @@
 from tkinter import *
 import random
 import webbrowser
-from tkinter import messagebox
 
 # 각 메뉴에 대한 맛집 사이트 주소 설정
 restaurants = {
@@ -26,7 +25,6 @@ restaurants = {
     '마라전골': {'식당': '용용선생', '가격': 22900, '홈페이지': 'https://map.naver.com/p/entry/place/1132784805?c=20.00,0,0,0,dh'},
     '수타짜장면': {'식당': '황금루', '가격': 9500, '홈페이지': 'https://map.naver.com/p/entry/place/1309209880?c=18.30,0,0,0,dh'}
 }
-
 
 # Tkinter GUI 설정
 window = Tk()

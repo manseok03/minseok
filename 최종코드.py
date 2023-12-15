@@ -2,9 +2,6 @@ import random
 import time
 import webbrowser
 
-def get_user_choice():
-    choices = ['랜덤', '선택']
-
 def determine_menu(user_choice):
     
     # '랜덤'을 선택했을 때의 메뉴 추천 코드
